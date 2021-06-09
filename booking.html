@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Booking Form HTML Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <link rel="stylesheet" href="./css/main.css">
+		
+
+		
+     <script>
+	function openForm() {
+	document.getElementById("myForm").style.display = "block";
+	}
+
+	function closeForm() {
+	document.getElementById("myForm").style.display = "none";
+	}
+	</script>
+	</head>
+<body>
+
+<div class="nav">
+	   <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="Accommodation.html">Accommodation</a></li>
+		<li><a href="booking.html">Bookings</a></li>
+		<li><a href="register.html">Special Offer</a><li/>
+		<li><a href="contactus.html">Contact Us</a></li>
+   </ul>
+		<div class="navright">
+		    
+			
+			<div class="logindrop">
+				<button class="open-button" onclick="openForm()">Login</button>
+
+				<div class="form-popup" id="myForm">
+					<form action="login.php" class="form-container" method="POST">
+		
+						<label for="email"><b>Email</b></label>
+						<input type="text" placeholder="Enter Email" name="email" required>
+
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+
+						<button type="submit" class="btn">Login</button>
+						<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div class="content">
+<div class="slideshow">
+  <img class="slide" src="./images/slider/image1.png" style="display: block;">
+    <img class="slide" src="./images/slider/image2.png" style="display: none;">
+    <img class="slide" src="./images/slider/image3.png" style="display: block;">
+    <script src="./js/slides.js"></script>
+</div>
+<br>    <form action="booking.php" method="post">
+		<div class="chkavilform">
+			<div class="form-group">
+				<span class="form-label">Room Type</span><br>
+				<select class="form-control" name="roomtype" required>
+					<option>Select your room type..</option>
+					<option value="Premium">Premium Room</option>
+					<option value="Delux">Delux Room</option>
+					<option value="King">King Room</option>
+					<option value="Twinbed">Twinbed Room</option>
+					<option value="Single">Single Room</option>
+					<option value="Conference">Conference Room</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<span class="form-label">Check In</span><br>
+				<input class="form-control" type="date" name="checkin" required>
+			</div>
+			<div class="form-group">
+				<span class="form-label">Check out</span><br>
+				<input class="form-control" type="date" name="checkout" required>
+			</div>
+			<div class="form-group">
+				<span class="form-label">Guests</span><br>
+				<select class="form-control" name="guest">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>	
+					<option>10</option>
+					<option>20</option>
+				</select>
+				<span class="select-arrow"></span>
+			</div>
+			<div class="form-group">
+				<button class="btn">Check availability</button>
+			</div>
+			
+		</div>
+		
+    </form>
+
+</div>
+<br><br><br><br><br>
+<!--<div style="text-align: center;font-size:24px;color:green;width=50px;">
+<a href ="Accommodation.html"><button class="btn">Our Accommodation Facilities</button></a>
+</div>
+-->
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div style="text-align:center; font-size:12px; background:#abb886; height:50px;">
+<footer>
+    <p class="titles">Information Technology Diploma Project (INDP) Designed by Sazia Tanzin, Rexen Viray, Liang Ke</p>
+</footer>
+</div>
+
+</body></html>
