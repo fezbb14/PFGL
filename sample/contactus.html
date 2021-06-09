@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Contact Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <link rel="stylesheet" href="./css/main.css">
+		<!-- Add icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script>
+			function openForm() {
+		document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+		document.getElementById("myForm").style.display = "none";
+		}
+	</script>
+	</head>
+<body>
+
+	<div class="nav">
+	   <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="Accommodation.html">Accommodation</a></li>
+		<li><a href="booking.html">Bookings</a></li>
+		<li><a href="register.html">Special Offer</a><li/>
+		<li><a href="contactus.html">Contact Us</a></li>
+   </ul>
+		<div class="navright">
+		    
+			
+			<div class="logindrop">
+				<button class="open-button" onclick="openForm()">Login</button>
+
+				<div class="form-popup" id="myForm">
+					<form action="/action_page.php" class="form-container">
+		
+						<label for="email"><b>Email</b></label>
+						<input type="text" placeholder="Enter Email" name="email" required>
+
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+
+						<button type="submit" class="btn">Login</button>
+						<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div class="content">
+<div class="slideshow">
+    <img class="slide" src="./images/slider/image1.png" style="display: block;">
+    <img class="slide" src="./images/slider/image2.png" style="display: none;">
+    <img class="slide" src="./images/slider/image3.png" style="display: block;">
+	<script src="./js/slides.js"></script>
+</div>
+
+<div class="contactus"> <!-- Contact Us container -->
+	
+	<div class="contactus-inner">
+	<h2 class="titles">Our Location</h2>
+	<i class="fa fa-map-marker" style='font-size:24px;color:blue;'></i>
+	Sydney, Australia<br>
+	<i class="fa fa-envelope" style='font-size:20px;color:blue;'></i>
+	customarcare@petfel.com.au<br>
+	<i class="fa fa-mobile" style='font-size:24px;color:blue;'></i>
+	XXXXXXXXXX<br>
+	<br>
+	<div class="socialmedia">
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<a href="#" class="fa fa-youtube"></a>
+	</div>
+	</div>
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   
+	<div class="contactus-inner">
+		<form method="post" style="max-width:500px;margin:auto" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbwFe6S31ns0LprRBJTPa9GuypYOFMoD3sHa07fBwQ/exec">
+			<h2 class="titles">Contact Us</h2>
+			<div class="input-container">
+				<i class="fa fa-user icon"></i>
+				<input class="input-field" type="text" placeholder="Name" name="name" required>
+			</div>
+				
+			
+			<div class="input-container">
+				<i class="fa fa-envelope icon"></i>
+				<input class="input-field" type="text" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required >
+			</div>
+			
+			<div class="input-container">
+				<i class="fa fa-mobile icon"></i>
+				<input class="input-field" type="text" placeholder="Mobile Number" name="mobno" >
+			</div>
+		
+			
+			<div class="input-container">
+				<i class="fa fa-comment icon"></i>
+				<textarea class="input-field"  name="message" rows="4" cols="50" >
+				</textarea>
+				
+			</div>
+			
+			
+			<button type="submit" class="btn">
+			<i class="fa fa-paper-plane"></i>&nbsp;Send Email</button>
+			 <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h2>
+    </div>
+			</form>
+			<!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+			<br>
+	</div>
+</div>
+
+
+</div>
+<footer>
+    <p class="titles">Copyright &copy; 2021 Sazia Tanzin<br>
+</footer>
+</div>
+
+</body></html>

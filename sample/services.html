@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Services</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <link rel="stylesheet" href="./css/main.css">
+     <script>
+	function openForm() {
+	document.getElementById("myForm").style.display = "block";
+	}
+
+	function closeForm() {
+	document.getElementById("myForm").style.display = "none";
+	}
+	</script>
+	</head>
+<body>
+
+	<div class="nav">
+	   <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="Accommodation.html">Accommodation</a></li>
+		<li><a href="booking.html">Bookings</a></li>
+		<li><a href="register.html">Special Offer</a><li/>
+		<li><a href="contactus.html">Contact Us</a></li>
+   </ul>
+		<div class="navright">
+		    
+			
+			<div class="logindrop">
+				<button class="open-button" onclick="openForm()">Login</button>
+
+				<div class="form-popup" id="myForm">
+					<form action="/action_page.php" class="form-container">
+		
+						<label for="email"><b>Email</b></label>
+						<input type="text" placeholder="Enter Email" name="email" required>
+
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+
+						<button type="submit" class="btn">Login</button>
+						<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div class="content">
+<div class="slideshow">
+    <img class="slide" src="./images/slider/image1.png" style="display: block;">
+    <img class="slide" src="./images/slider/image2.png" style="display: none;">
+    <img class="slide" src="./images/slider/image3.png" style="display: block;">
+	<script src="./js/slides.js"></script>
+</div>
+<div class="services"> <!-- services container -->
+	<h1>Our Services</h1>
+	<div class="services-inner">
+		<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 250px;
+  perspective: 1000px;
+  margin-left:20%;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+
+<h2>Front Desk</h2>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./PFGL_files/icons/hotel_front_desks.png" alt="Front Desk" style="width:350px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Front Desk</h2> 
+      <p> 24-hour reception, Room Services,<br>, Doormanrooms</br> All from one place!</p>
+    </div>
+  </div>
+</div>		
+	</div>
+	
+	<div class="services-inner">	
+
+<h2>Payment Processing</h2>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./PFGL_files/icons/payment.jpg" alt="Payment Processing" style="width:350px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Payment Processing</h2> 
+      <p>Our mission is to provide the most flexible payment processing for hotels & vacation homes.</p>
+		<p>When a new booking is received, ChargeAutomation facilitate payments based on your rules.</p>
+    </div>
+  </div>
+</div>
+		
+	</div>
+	<div class="services-inner">
+	
+<h2>Fitness Center</h2>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./PFGL_files/icons/fitness.jpg" alt="Fitness Center" style="width:350px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Fitness Center</h2> 
+      <p> Fitness Studio. Cycle Studio.</p>
+	  <p> Functional Training Studio. Circuit Studio.</p>
+	  <p> Weights Training Areas. Stretching Area.</p>
+    </div>
+  </div>
+</div>	
+	</div>
+	
+	<div class="services-inner">
+
+<h2>Pool Facilities</h2>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./PFGL_files/icons/pool.jpg" alt="Pool Facilities" style="width:350px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Pool Facilities</h2> 
+      <p> 25 metre Indoor Pool</p>
+<p>50 metre Outdoor Pool </p>
+<p>Wet Play Area</p>
+<p>Electric Barbecues</p>
+    </div>
+  </div>
+</div>
+	</div>
+	
+	<div class="services-inner">	
+
+<h2>Breakfast and Dining</h2>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./PFGL_files/icons/dining.jpg" alt="Breakfast and Dining" style="width:350px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Breakfast and Dining </h2> 
+     		<p>Unique dining experiences. Elegant afternoon teas.</br> 
+		Enjoy 8 different interactive kitchens and cuisines and </br>
+		prepare to experience, indulges and celebrate to your favourite luxury world kitchens. </p>
+    </div>
+  </div>
+</div>
+
+	</div>
+	<div class="services-inner">
+								
+<h2>Spa Centre</h2>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./PFGL_files/icons/spa.jpeg" alt="Spa Centre" style="width:350px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Breakfast and Dining </h2> 
+     		<p>Over 20 therapies from all over the world</br>
+		Relaxation and wellbeing for body & soul</br>Inspired by the nature and the power of Aromatherapy
+		</br>A variety of signature Ancient treatments</p>
+    </div>
+  </div>
+</div>
+		
+</div>
+
+</div>
+<footer>
+    <p class="titles">Copyright &copy; 2021 Sazia Tanzin<br>
+</footer>
+</div>
+</body>
+</html>

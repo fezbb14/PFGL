@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Booking Form HTML Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <link rel="stylesheet" href="./css/main.css">
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="./css/booking/bootstrap.min.css" />
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="./css/booking/style.css" />
+     <script>
+	function openForm() {
+	document.getElementById("myForm").style.display = "block";
+	}
+
+	function closeForm() {
+	document.getElementById("myForm").style.display = "none";
+	}
+	</script>
+	</head>
+<body>
+
+<div class="nav">
+	   <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="Accommodation.html">Accommodation</a></li>
+		<li><a href="booking.html">Bookings</a></li>
+		<li><a href="register.html">Special Offer</a><li/>
+		<li><a href="contactus.html">Contact Us</a></li>
+   </ul>
+		<div class="navright">
+		    
+			
+			<div class="logindrop">
+				<button class="open-button" onclick="openForm()">Login</button>
+
+				<div class="form-popup" id="myForm">
+					<form action="/action_page.php" class="form-container">
+		
+						<label for="email"><b>Email</b></label>
+						<input type="text" placeholder="Enter Email" name="email" required>
+
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+
+						<button type="submit" class="btn">Login</button>
+						<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div class="content">
+<div class="slideshow">
+  <img class="slide" src="./images/slider/image1.png" style="display: block;">
+    <img class="slide" src="./images/slider/image2.png" style="display: none;">
+    <img class="slide" src="./images/slider/image3.png" style="display: block;">
+    <script src="./js/slides.js"></script>
+</div>
+<br>
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<form action="" method="post">
+							<div class="row no-margin">
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Room Type</span>
+										<select class="form-control">
+													<option value="" disabled selected hidden>Select your room type</option>
+													<option value="Premium">Premium</option>
+													<option value="Delux">Delux</option>
+													<option value="King">King</option>
+													<option value="Twinbed">Twinbed</option>
+													<option value="Single">Single</option>
+													<option value="Hallroom">Hallroom</option>										
+												</select>
+												<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row no-margin">
+										<div class="col-md-5">
+											<div class="form-group">
+												<span class="form-label">Check In</span>
+												<input class="form-control" type="date" required>
+											</div>
+										</div>
+										<div class="col-md-5">
+											<div class="form-group">
+												<span class="form-label">Check out</span>
+												<input class="form-control" type="date" required>
+											</div>
+										</div>
+										<div class="col-md-2">
+											<div class="form-group">
+												<span class="form-label">Guests</span>
+												<select class="form-control">
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+													<option>6</option>
+													<option>7</option>
+													<option>8</option>
+													
+												</select>
+												<span class="select-arrow"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-btn">
+										<button class="submit-btn">Check availability</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+    <p class="titles">Copyright &copy; 2021 Sazia Tanzin<br>
+</footer>
+</div>
+
+</body></html>

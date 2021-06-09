@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Accommodation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+     <script>
+	function openForm() {
+	document.getElementById("myForm").style.display = "block";
+	}
+
+	function closeForm() {
+	document.getElementById("myForm").style.display = "none";
+	}
+	</script>
+	</head>
+<body>
+
+	<div class="nav">
+	   <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="Accommodation.html">Accommodation</a></li>
+		<li><a href="booking.html">Bookings</a></li>
+		<li><a href="register.html">Special Offer</a><li/>
+		<li><a href="contactus.html">Contact Us</a></li>
+   </ul>
+		<div class="navright">
+		    
+			
+			<div class="logindrop">
+				<button class="open-button" onclick="openForm()">Login</button>
+
+				<div class="form-popup" id="myForm">
+					<form action="/action_page.php" class="form-container">
+		
+						<label for="email"><b>Email</b></label>
+						<input type="text" placeholder="Enter Email" name="email" required>
+
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+
+						<button type="submit" class="btn">Login</button>
+						<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div class="content">
+	<div class="slideshow">
+		<img class="slide" src="./images/slider/image1.png" style="display: block;">
+		<img class="slide" src="./images/slider/image2.png" style="display: none;">
+		<img class="slide" src="./images/slider/image3.png" style="display: block;">
+		<script src="./js/slides.js"></script>
+	</div>
+
+	<div class="row-acc">
+		<div class="column">
+			<div class="card">
+				<img src="./images/roomtype/premium.jpg" alt="Premium Room" style="width:100%">
+				<div class="container-acc">
+					<h2>Premium</h2>
+					<p class="title"><i class="fa fa-dollar" style="font-size:24px;color:green;"></i>300<span class="rate">/per night</span></p>
+					<ul class="room-feat">
+						<li>Perfect for traveling couples</li>
+						<li>Breakfast included</li>
+						<li>Ac Room</li>
+					</ul>
+		
+					<p><button class="button-acc" value="Premium"><a href="booking.html">Book Now</a></button></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<img src="./images/roomtype/delux.jpg" alt="Delux Room" style="width:100%">
+				<div class="container-acc">
+					<h2>Delux</h2>
+					<p class="title"><i class="fa fa-dollar" style="font-size:24px;color:green;"></i>300<span class="rate">/per night</span></p>
+					<ul class="room-feat">
+						<li>Perfect for traveling couples</li>
+						<li>Breakfast included</li>
+						<li>Ac Room</li>
+					</ul>
+					<p><button class="button-acc"><a href="booking.html">Book Now</a></button></p>
+				</div>
+			</div>
+		</div>
+  
+		<div class="column">
+			<div class="card">
+				<img src="./images/roomtype/king.jpg" alt="King Room" style="width:100%">
+				<div class="container-acc">
+					<h2>King</h2>
+					<p class="title"><i class="fa fa-dollar" style="font-size:24px;color:green;"></i>300<span class="rate">/per night</span></p>
+					<ul class="room-feat">
+						<li>Perfect for traveling couples</li>
+						<li>Breakfast included</li>
+						<li>Ac Room</li>
+					</ul>
+					<p><button class="button-acc"><a href="booking.html">Book Now</a></button></p>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				<img src="./images/roomtype/twinbed.jpg" alt="Twinbed Room" style="width:100%">
+				<div class="container-acc">
+					<h2>Twinbed</h2>
+					<p class="title"><i class="fa fa-dollar" style="font-size:24px;color:green;"></i>300<span class="rate">/per night</span></p>
+					<ul class="room-feat">
+						<li>Perfect for traveling couples</li>
+						<li>Breakfast included</li>
+						<li>Ac Room</li>
+					</ul>
+					<p><button class="button-acc"><a href="booking.html">Book Now</a></button></p>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				<img src="./images/roomtype/singleroom.jpg" alt="Single Room" style="width:100%">
+				<div class="container-acc">
+					<h2>Single</h2>
+					<p class="title"><i class="fa fa-dollar" style="font-size:24px;color:green;"></i>300<span class="rate">/per night</span></p>
+					<ul class="room-feat">
+						<li>Perfect for traveling couples</li>
+						<li>Breakfast included</li>
+						<li>Ac Room</li>
+					</ul>
+					<p><button class="button-acc"><a href="booking.html">Book Now</a></button></p>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				<img src="./images/roomtype/hallroom.jpg" alt="Hall Room" style="width:100%">
+				<div class="container-acc">
+					<h2>Hallroom</h2>
+					<p class="title"><i class="fa fa-dollar" style="font-size:24px;color:green;"></i>300<span class="rate">/per night</span></p>
+					<ul class="room-feat">
+						<li>Perfect for traveling couples</li>
+						<li>Breakfast included</li>
+						<li>Ac Room</li>
+					</ul>
+					<p><button class="button-acc"><a href="booking.html">Book Now</a></button></p>
+				</div>
+			</div>
+		</div>
+		
+</div>
+
+</div>
+<br><br><br>
+<footer>
+    <p class="titles">Copyright &copy; 2021 Sazia Tanzin<br>
+</footer>
+</div>
+
+</body></html>

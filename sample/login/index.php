@@ -1,0 +1,28 @@
+<?php
+include "config.php";
+?>
+<html>
+    <head>
+        <title>Create simple login page with PHP and MySQL</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <form method="post" action="login.php">
+                <div id="div_login">
+                    <h1>Login</h1>
+                    <div>
+                        <input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
+                    </div>
+                    <div>
+                        <input type="password" class="textbox" id="txt_uname" name="txt_pwd" placeholder="Password"/>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit" name="but_submit" id="but_submit" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+

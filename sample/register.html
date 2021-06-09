@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Registration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <!-- Add icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/main.css">
+		<style>
+			#more {display: none;}
+		</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+
+    function checkPasswordMatch() {
+        var password = $("#txtNewPassword").val();
+        var confirmPassword = $("#txtConfirmPassword").val();
+        if (password != confirmPassword)
+            $("#CheckPasswordMatch").html("Passwords does not match!").css('color', 'red');
+        else
+            $("#CheckPasswordMatch").html("Passwords match.").css('color', 'green');
+    }
+    $(document).ready(function () {
+       $("#txtConfirmPassword").keyup(checkPasswordMatch);
+    });
+    </script>
+	<script>
+	function openForm() {
+	document.getElementById("myForm").style.display = "block";
+	}
+
+	function closeForm() {
+	document.getElementById("myForm").style.display = "none";
+	}
+	</script>
+	
+	</head>
+<body>
+
+	<div class="nav">
+	   <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="Accommodation.html">Accommodation</a></li>
+		<li><a href="booking.html">Bookings</a></li>
+		<li><a href="register.html">Special Offer</a><li/>
+		<li><a href="contactus.html">Contact Us</a></li>
+   </ul>
+		<div class="navright">
+		    
+			
+			<div class="logindrop">
+				<button class="open-button" onclick="openForm()">Login</button>
+
+				<div class="form-popup" id="myForm">
+					<form action="/action_page.php" class="form-container">
+		
+						<label for="email"><b>Email</b></label>
+						<input type="text" placeholder="Enter Email" name="email" required>
+
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+
+						<button type="submit" class="btn">Login</button>
+						<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="content">
+		<div class="slideshow">
+		  <img class="slide" src="./images/slider/image1.png" style="display: block;">
+			<img class="slide" src="./images/slider/image2.png" style="display: none;">
+			<img class="slide" src="./images/slider/image3.png" style="display: block;">
+			<script src="./js/slides.js"></script>
+		</div>
+		<div class="sor">
+		<div class="BOF">
+			<h2 class="titles">Membership Facilities</h2>
+			<img src="./images/feature/membership.jpg" alt="Membership facilities"/>
+			<p>Members are entitled to a discount of up to 12% off nightly room rates on all future stays at our lodge 
+			by entering their Unique Member ID into the Reservation Code section when making a booking
+			directly through the Petra Flamingo Getaway Lodge website.<p>
+			<h3>Conditions</h3><span id="dots">...</span>
+			<span id="more">
+			<ul>
+			<li>Membership is for individual use only and cannot be applied to multiple rooms or bookings over the same dates.</li>
+			<li>Your own Unique Member ID cannot be used by others. The name on the booking must match the name that is attached to the membership.</li>
+			<li>The use of the Unique Member ID may not be available when we are conducting maintenance on our brand website.</li>
+			</ul>
+			</span>
+			<button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+		</div>
+
+		<div class="register">
+			<form action="register.php" method="post" style="max-width:500px;margin:auto">
+			<h2 class="titles">Register Form</h2>
+			<div class="input-container">
+				<i class="fa fa-user icon"></i>
+				<input class="input-field" type="text" placeholder="First Name" name="fname" required>
+			</div>
+			
+			<div class="input-container">
+				<i class="fa fa-user icon"></i>
+				<input class="input-field" type="text" placeholder="Last Name" name="lname">
+			</div>
+			
+			<div class="input-container">
+				<i class="fa fa-address-card icon"></i>
+				<input class="input-field" type="text" placeholder="Adress" name="address">
+			</div>
+			
+			<div class="input-container">
+				<i class="fa fa-mobile icon"></i>
+				<input class="input-field" type="text" placeholder="Mobile Number" name="mobno" >
+			</div>
+			
+			<div class="input-container">
+				<i class="fa fa-envelope icon"></i>
+				<input class="input-field" type="text" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required >
+			</div>
+			
+			<div class="input-container">
+				<i class="fa fa-key icon"></i>
+				<input class="input-field" type="password" placeholder="Password" id="txtNewPassword" name="pass" onkeyup='check();'>
+			</div>
+			
+			<div class="input-container">
+				<i class="fa fa-key icon"></i>
+				<input class="input-field" type="password" placeholder="Retype Password" id="txtConfirmPassword"  name="confirm_password" onkeyup='check();'>
+			
+            </div>
+			<div class="registrationFormAlert" style="color:green;" id="CheckPasswordMatch"></div>
+			<button type="submit" class="btn">Register</button>
+			</form>
+			<br>
+		</div>
+		</div>
+		<br><br>
+		<div class="extrafeature">
+			<div class="feature-inner">
+				<img src="./images/feature/relax.jpg" alt="Relaxed Check-Out"/>
+				<h2>Relaxed Check-Out</h2>
+			
+				<p>If you're wanting to take it easy in the morning and experience your luxury suite for a bit longer, our Relaxed Check-Out option is the<br>
+				perfect adition to your upcoming reservation.</p>
+				<p>For an extra $60.00 you can extend your departure time until 1:00pm on your next stay</p>
+			</div>
+		   <div class="feature-inner">
+				<img src="./images/feature/extstay.jpg" alt="Extended Stays"/>
+				<h2>Extended Stays </h2>
+			
+				<p>Our extended stay rates are perfectly suited for guests wishing to stay 21+ consecutive nights and who are looking to for even better value.</p>
+				<p> Enjoy a home away from home while staying at Petra Flamingo Getaway Lodge.</p> 
+			</div>
+		</div>
+
+</div>
+<footer>
+    <p class="titles">Copyright &copy; 2021 Sazia Tanzin<br>
+</footer>
+</div>
+
+</body></html>

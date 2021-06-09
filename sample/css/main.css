@@ -1,0 +1,423 @@
+body {
+  margin: 0px;
+  padding:0px;
+  font-family: Arial, Helvetica, sans-serif;
+ /*background-color: #F0FFFF; */
+  color: #000;
+  font-weight: bold;
+ 
+}
+/*Nav Background And Sticky Nav*/
+.nav {
+  display: flex;
+  height: 70px;
+  background-color:#ccffff;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0 ;
+  z-index:1;
+  width:100%;
+  
+}
+
+#menu li {
+	display: inline;
+    list-style: none;
+    padding: 0;
+}
+ 
+#menu li a {
+	border: 1px solid white;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+    color:black;
+    margin-left: 2px;
+    /* This is the background used for the animation */
+    background-image: url('../images/navbar/image.jpg');
+    /* Align the background image position to the left of the link */
+    background-position: left;
+    -webkit-transition: all 0.8s ease-in-out;
+    /* Animation with transition in Firefox (No supported Yet) */
+    -moz-transition: all 0.8s ease-in-out;
+    /* Animation with transition in Opera (No supported Yet)*/
+    -o-transition: all 0.8s ease-in-out;
+}
+#menu li a:hover {
+    color: white;
+    /* Align the background image position of the background to the right*/
+    background-position:right;
+	font-size:20px;
+}
+
+.navright {
+    margin-left: auto;
+    order: 2;
+}
+
+/*Nav Buttons*/
+.nav a {
+  float: left;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-shadow:1px 1px 2px rgba(0,0,0,0.4);
+}
+
+/*Navright*/
+.navright .logindrop .open-button{
+	font-size:17px;
+	text-shadow:1px 1px 2px rgba(0,0,0,0.4);
+	margin-top:5px;
+	margin-right:2px;
+	border:1px solid blue;
+	
+}
+/*Navright Hover*/
+.open-button:hover{
+  background-color: #fbbccd;
+  font-weight: bold;
+  color: black;
+}
+
+.content {
+	background-image: url('../background.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+/*Slideshow*/
+.slide {
+    width: 100%;
+	height:400px;
+    display: none;
+}
+
+.titles {
+    text-align: center;
+}
+.infoL{
+text-align:center;	
+}
+.infoFA {
+text-align:center;
+    background-color: #F3EEED;
+}
+
+.content {
+    padding: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*For services page*/
+.services {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap:30px;
+	
+	}
+.services-inner {
+	text-align: center;
+	
+	margin-left:50px;
+	margin-right:50px;
+	}
+.services>h1{
+	grid-column: 1/3;
+	text-align:center;
+	}
+.services img {
+	height:200px;
+	width:320px;
+	}
+/*For registration page*/
+.sor {
+	display: grid;
+	grid-template-columns: 45% 45%;
+	margin-top:30px;
+	grid-gap:50px;
+	text-align:center;
+	}
+
+.BOF {
+	text-align:justify;
+	margin-left:50px;
+	padding:15px 15px;
+	background-color:#F3EEED;
+}
+.BOF img{
+	height:250px;
+	width: 300px;
+	margin-left:25%;
+}
+.register {
+	text-align: center;
+	background-color:#F3EEED;
+	}
+
+.input-container {
+
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	width: 100%;
+	margin-bottom: 15px;
+	}
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  		
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+.extrafeature {
+	display: grid;
+	grid-template-columns: auto auto;
+	width:50%;
+	grid-gap: 50px;
+	margin-left:300px;
+	}
+.feature-inner {
+	text-align: center;
+	background-color:#F3EEED;
+	}
+
+.extrafeature img {
+	height:150px;
+	}
+/*Login Modal*/
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color:#ccffff;
+   font-weight: bold;
+   font-size:20px
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top:55px;
+  right: 2px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/*Contact Us*/
+.contactus {
+	display: grid;
+	grid-template-columns: auto auto;
+	width:50%;
+	grid-gap: 50px;
+	margin-left:300px;
+	margin-top:30px;
+	}
+.contactus-inner {
+	padding:10px 10px;
+	background-color:#F3EEED;
+	}
+
+.socialmedia {
+	text-align:center;
+	}
+.socialmedia .fa {
+  padding: px;
+  font-size: 30px;
+  width: 30px;
+  
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.socialmedia .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+/*Accommodation Page*/
+
+.row-acc {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap:;
+	margin-left:250px;
+	margin-right:150px;
+	margin-top:16px;
+	margin-bottom: 16px;
+	
+}
+.row-acc img{
+	height:150px;
+	Width: 200px;
+	padding:10px 10px;
+}
+.row-acc img:hover{
+opacity:0.8;
+transform: scale(1.05);
+
+}
+
+.column {
+  float: left;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.column:hover{
+opacity:1;
+transform: scale(1.5);
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container-acc {
+  padding: 0 16px;
+}
+
+.title {
+  font-size:30px;
+}
+.rate{
+font-size:18px;
+color:blue;
+}
+h2{
+ border-bottom: 1px solid #eee;
+}
+p{
+ border-bottom: 1px solid #eee;
+} 
+.room-feat{
+border-bottom: 1px solid #eee;
+}
+.button-acc {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #04AA6D;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+}
+
+.button-acc:hover {
+  background-color: #555;
+}
+
+.button-acc a{
+	text-decoration:none;
+}
